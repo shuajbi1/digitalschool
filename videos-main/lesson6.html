@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>video</title>
+</head>
+<body>
+    
+<!--video-->
+
+    <div style="text-align:center"> 
+        <button onclick="playPause()">Play/Pause</button> 
+        <button onclick="makeBig()">Big</button>
+        <button onclick="makeSmall()">Small</button>
+        <button onclick="makeNormal()">Normal</button>
+        <br><br>
+        <video id="video1" width="420">
+          <source src="luffy.mp4" type="video/mp4">
+          Your browser does not support HTML video.
+        </video>
+      </div> 
+
+<!--video button controls-->
+
+
+      <script>
+        var myVideo = document.getElementById("video1"); 
+        
+        function playPause() { 
+          if (myVideo.paused) 
+            myVideo.play(); 
+          else 
+            myVideo.pause(); 
+        } 
+        
+        function makeBig() { 
+            myVideo.width = 560; 
+        } 
+        
+        function makeSmall() { 
+            myVideo.width = 320; 
+        } 
+        
+        function makeNormal() { 
+            myVideo.width = 420; 
+        } 
+      </script>
+        
+        <p>got this from <a href="https://moewalls.com/anime/luffy-on-the-beach-one-piece-live-wallpaper/" target="_blank">idk</a>.</p>
+       
+   <!--ifarame-->
+     
+<div  style="text-align:center">
+
+        <iframe width="420" height="315"
+        src="https://www.youtube.com/embed/tgbNymZ7vqY" title="luffy" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypt-media; gjyroscope; picture-inpicture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"  allowfullscreen></iframe>
+</iframe>
+</div>
+
+<!--audio-->
+<audio controls>
+<source  src="five.mp3" type="audio/mpeg">
+this is not an audio wink wink!!
+
+
+</audio>
+</body>
+</html>
