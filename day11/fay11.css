@@ -1,0 +1,38 @@
+body {
+    background: linear-gradient(to right,  #ec3535, #FFB700);
+}
+h1 {
+    color: aqua;
+    padding: 20px;
+    margin: 20px;
+}
+
+p{
+    background-color: black;
+    padding: 20px;
+    margin: 20px;
+    margin-bottom: auto;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: auto;
+width: 300px;
+height: 300px;
+border: 3px solid brown;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+
+}
+
+
+button{
+
+    background-color: aqua;
+    
+}
+
+   button:hover{
+    color: yellowgreen;
+    background-color: yellow;
+    
+}
+
