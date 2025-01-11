@@ -1,0 +1,178 @@
+/* Element Selector */
+article p {
+    background: #ffcc99; /* Peach background */
+    color: #333333;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+article p:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Child Selector */
+article > p {
+    background: #ff9966; /* Coral background */
+    color: #333333;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 10px;
+    transition: background 0.5s ease;
+}
+
+article > p:hover {
+    background: #ff6633; /* Darker coral on hover */
+}
+
+/* General Sibling Combinator */
+article ~ p {
+    background: #99ccff; /* Light blue background */
+    color: #333333;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.3s ease;
+}
+
+article ~ p:hover {
+    opacity: 0.8;
+}
+
+/* Adjacent Sibling Combinator */
+article + p {
+    background: #66cc99; /* Mint green background */
+    color: #333333;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: color 0.3s ease, background 0.3s ease;
+}
+
+article + p:hover {
+    background: #339966; /* Darker mint green on hover */
+}
+
+/* First Child Pseudo Class */
+h1:first-child {
+    background: #ffcc00; /* Bright yellow background */
+    color: #333333;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Input States */
+input:in-range {
+    border: 3px solid green;
+    box-shadow: 0 0 10px rgba(0, 128, 0, 0.5);
+    transition: all 0.3s ease-in-out;
+    animation: glow 1s infinite;
+}
+
+input:out-of-range {
+    border: 3px solid red;
+    animation: shake 0.5s ease-in-out;
+}
+
+input:required {
+    border: 5px solid blue;
+    transition: border-color 0.3s ease;
+}
+
+input:required:focus {
+    border-color: #0eaef8;
+}
+
+input[name="name"]:valid {
+    border: 3px solid green;
+}
+
+input[name="name"]:invalid {
+    border: 3px solid red;
+}
+
+/* Grouping Selectors */
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 10px rgba(0, 128, 0, 0.5);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(0, 128, 0, 0.8);
+    }
+    100% {
+        box-shadow: 0 0 10px rgba(0, 128, 0, 0.5);
+    }
+}
+
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-5px);
+    }
+    50% {
+        transform: translateX(5px);
+    }
+    75% {
+        transform: translateX(-5px);
+    }
+}
+
+/* First-of-Type Selector */
+span:first-of-type {
+    background-color: #cc66ff; /* Purple background */
+    color: #ffffff;
+    padding: 20px;
+    margin :auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#p1:first-of-type{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#p1:hover:first-of-type{
+    transform: scale(1.02);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+#p1::first-line{
+    background-color: aliceblue;
+    color: blue;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+::selection{
+    background-color: beige;
+    color: black;
+}
+
+div{
+    opacity: 0.5;
+}
