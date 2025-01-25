@@ -1,0 +1,27 @@
+class Home:
+    def __init__(self, address):
+        self.address = address
+
+    def display_address(self):
+        print(f"Home address: {self.address}")
+
+class HomeSystem:
+    def __init__(self):
+        self.homes = []
+
+    def add_home(self, home):
+        self.homes.append(home)
+
+    def display_homes(self):
+        for home in self.homes:
+            home.display_address()
+
+# Example usage:
+home_system = HomeSystem()
+home1 = Home("123 Main St")
+home2 = Home("456 Elm St")
+
+home_system.add_home(home1)
+home_system.add_home(home2)
+
+home_system.display_homes()
