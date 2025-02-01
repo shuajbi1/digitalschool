@@ -36,7 +36,8 @@ body {
     padding: 5px;
 }
 .sprite{
-    background:url(imagase/1and2.png) no-repeat;
+    background:url(imagase/1and2.png) ;
+    background-repeat: no-repeat;
 }
 .city1{
 
