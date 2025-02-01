@@ -1,0 +1,59 @@
+*{
+    
+        background: linear-gradient(to right, #159957, #155799); 
+      
+
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+    background-color: #f4f4f4;
+
+    
+}
+
+.gallery {
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+    border:  2px solid blueviolet;
+}
+
+.gallery-image {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.2s;
+}
+
+.gallery-image:hover {
+    transform: scale(1.05);
+}
+
+.sec {
+    font-size: 14px;
+    color: #555;
+    padding: 5px;
+}
+.sprite{
+    background:url(imagase/1and2.png) no-repeat;
+}
+.city1{
+
+    height: 500px;
+    width: 500px;
+    background-color: #f4f4f4;
+    display: inline-block;
+    background-position: 0 0;
+}
+
+
+.city1{
+
+    height: 500px;
+    width: 500px;
+    background-color: #f4f4f4;
+    display: inline-block;
+    background-position: -500px 0;
+}
+
