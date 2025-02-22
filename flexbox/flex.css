@@ -143,7 +143,7 @@ height: 20PX;
   border: 5px solid #8e24aa;
   gap: 10px;
   flex-direction: row;
-  justify-content: flex-end;
+  height: 1000PX;
 align-items: space-around;
 flex-wrap: wrap;
 }
