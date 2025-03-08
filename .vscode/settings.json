@@ -1,3 +1,6 @@
 {
-    "livePreview.defaultPreviewPath": "/day16/day16.html"
+    "livePreview.defaultPreviewPath": "/day16/day16.html",
+    "prettier.endOfLine": "auto",
+    "notebook.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
 }
